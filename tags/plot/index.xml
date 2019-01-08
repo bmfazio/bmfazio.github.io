@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Plot on Boris Fazio</title>
+    <link>https://bmfazio.netlify.com/tags/plot/</link>
+    <description>Recent content in Plot on Boris Fazio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; I have no clue what my rights are yet.</copyright>
+    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    
+	<atom:link href="https://bmfazio.netlify.com/tags/plot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>https://bmfazio.netlify.com/about/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>https://bmfazio.netlify.com/about/</guid>
+      <description>About me Hi!
+My name is Boris.
+I studied biology in college but statistics caught my attention along the way. Most of the time I’m helping other researchers analyze their data or reading about things that will help me help others more efficiently.
+In my free time I create generative art using Processing. Hopefully I’ll have something nice to share here soon!
+ About this site My main motivation for setting up a blog is to document my progress and sporadically publish personal musings.</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>https://bmfazio.netlify.com/post/2015-07-23-r-rmarkdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>https://bmfazio.netlify.com/post/2015-07-23-r-rmarkdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+    </item>
+    
+  </channel>
+</rss>

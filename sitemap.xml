@@ -3,131 +3,131 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://bmfazio.netlify.com/post/creating-a-new-theme/</loc>
+    <loc>https://bmfazio.github.io/post/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/post/migrate-from-jekyll/</loc>
+    <loc>https://bmfazio.github.io/post/migrate-from-jekyll/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/about/</loc>
+    <loc>https://bmfazio.github.io/about/</loc>
     <lastmod>2019-01-01T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/post/2015-07-23-r-rmarkdown/</loc>
+    <loc>https://bmfazio.github.io/post/2015-07-23-r-rmarkdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/contact/</loc>
+    <loc>https://bmfazio.github.io/contact/</loc>
     <lastmod>2014-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/post/goisforlovers/</loc>
+    <loc>https://bmfazio.github.io/post/goisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/post/hugoisforlovers/</loc>
+    <loc>https://bmfazio.github.io/post/hugoisforlovers/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/</loc>
+    <loc>https://bmfazio.github.io/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/categories/</loc>
+    <loc>https://bmfazio.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/tags/development/</loc>
+    <loc>https://bmfazio.github.io/categories/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/categories/development/</loc>
+    <loc>https://bmfazio.github.io/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/tags/go/</loc>
+    <loc>https://bmfazio.github.io/tags/go/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/tags/golang/</loc>
+    <loc>https://bmfazio.github.io/categories/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/categories/golang/</loc>
+    <loc>https://bmfazio.github.io/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/tags/hugo/</loc>
+    <loc>https://bmfazio.github.io/tags/hugo/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/tags/plot/</loc>
+    <loc>https://bmfazio.github.io/tags/plot/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/post/</loc>
+    <loc>https://bmfazio.github.io/post/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/categories/r/</loc>
+    <loc>https://bmfazio.github.io/categories/r/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/tags/r-markdown/</loc>
+    <loc>https://bmfazio.github.io/tags/r-markdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/tags/regression/</loc>
+    <loc>https://bmfazio.github.io/tags/regression/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/tags/</loc>
+    <loc>https://bmfazio.github.io/tags/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/tags/templates/</loc>
+    <loc>https://bmfazio.github.io/tags/templates/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://bmfazio.netlify.com/tags/themes/</loc>
+    <loc>https://bmfazio.github.io/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

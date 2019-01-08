@@ -14,19 +14,6 @@
     
     <item>
       <title>Hello R Markdown</title>
-      <link>https://bmfazio.netlify.com/about/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      
-      <guid>https://bmfazio.netlify.com/about/</guid>
-      <description>About me Hi!
-My name is Boris.
-I studied biology in college but statistics caught my attention along the way. Most of the time I’m helping other researchers analyze their data or reading about things that will help me help others more efficiently.
-In my free time I create generative art using Processing. Hopefully I’ll have something nice to share here soon!
- About this site My main motivation for setting up a blog is to document my progress and sporadically publish personal musings.</description>
-    </item>
-    
-    <item>
-      <title>Hello R Markdown</title>
       <link>https://bmfazio.netlify.com/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       

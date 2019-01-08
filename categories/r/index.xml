@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R Markdown on Boris Fazio</title>
-    <link>https://bmfazio.netlify.com/tags/r-markdown/</link>
-    <description>Recent content in R Markdown on Boris Fazio</description>
+    <title>R on Boris Fazio</title>
+    <link>https://bmfazio.netlify.com/categories/r/</link>
+    <description>Recent content in R on Boris Fazio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; I have no clue what my rights are yet.</copyright>
     <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     
-	<atom:link href="https://bmfazio.netlify.com/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bmfazio.netlify.com/categories/r/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

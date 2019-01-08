@@ -14,7 +14,7 @@
   
   <url>
     <loc>https://bmfazio.netlify.com/about/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <lastmod>2019-01-01T21:13:14-05:00</lastmod>
   </url>
   
   <url>
@@ -44,7 +44,18 @@
   </url>
   
   <url>
+    <loc>https://bmfazio.netlify.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://bmfazio.netlify.com/tags/development/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bmfazio.netlify.com/categories/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -57,6 +68,12 @@
   
   <url>
     <loc>https://bmfazio.netlify.com/tags/golang/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bmfazio.netlify.com/categories/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -76,6 +93,12 @@
   <url>
     <loc>https://bmfazio.netlify.com/post/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bmfazio.netlify.com/categories/r/</loc>
+    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -106,11 +129,6 @@
   <url>
     <loc>https://bmfazio.netlify.com/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://bmfazio.netlify.com/topics/</loc>
     <priority>0</priority>
   </url>
   

@@ -23,6 +23,16 @@ Although some of that time was certainly spent on unnecessary nitpicking, I thin
     </item>
     
     <item>
+      <title>Testing</title>
+      <link>/post/testing/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/testing/</guid>
+      <description>I have been meaning to set up a personal blog for probably over a year now and I’ve finally found the time to do so. I probably could have done this a few months ago if I hadn’t spent so much time agonizing over choosing between Jekyll and Hugo, as well as finding the ideal theme.
+Although some of that time was certainly spent on unnecessary nitpicking, I think it was worth it as I ultimately feel I made a comfortably informed choice.</description>
+    </item>
+    
+    <item>
       <title>Hello R Markdown</title>
       <link>/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>

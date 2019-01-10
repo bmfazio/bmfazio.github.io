@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="generator" content="Hugo 0.53" />
 
-  <title>Hello R Markdown &middot; Boris Fazio</title>
+  <title>Testing &middot; Boris Fazio</title>
 
   
   
@@ -202,7 +202,7 @@
 
 
 <div class="header">
-  <h1>Hello R Markdown</h1>
+  <h1>Testing</h1>
   <h2></h2>
 </div>
 <div class="content">
@@ -211,7 +211,7 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>23 Jul 2015</time>
+    <time>10 Jan 2019</time>
   </div>
 
   
@@ -221,17 +221,6 @@
   
   
   
-  <div>
-    <i class="fa fa-tags fa-fw"></i>
-    
-      <a class="post-taxonomy-tag" href="/tags/r-markdown">R Markdown</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="/tags/plot">plot</a>&nbsp;&#47;
-    
-      <a class="post-taxonomy-tag" href="/tags/regression">regression</a>
-    
-  </div>
-  
   
 
 </div>
@@ -239,42 +228,17 @@
   
 
 
-<div id="r-markdown" class="section level1">
-<h1>R Markdown</h1>
-<p>Testing</p>
-<pre class="r"><code>summary(cars)
-##      speed           dist       
-##  Min.   : 4.0   Min.   :  2.00  
-##  1st Qu.:12.0   1st Qu.: 26.00  
-##  Median :15.0   Median : 36.00  
-##  Mean   :15.4   Mean   : 42.98  
-##  3rd Qu.:19.0   3rd Qu.: 56.00  
-##  Max.   :25.0   Max.   :120.00
-fit &lt;- lm(dist ~ speed, data = cars)
-fit
-## 
-## Call:
-## lm(formula = dist ~ speed, data = cars)
-## 
-## Coefficients:
-## (Intercept)        speed  
-##     -17.579        3.932</code></pre>
-</div>
-<div id="including-plots" class="section level1">
-<h1>Including Plots</h1>
-<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
-<pre class="r"><code>par(mar = c(0, 1, 0, 1))
-pie(
-  c(280, 60, 20),
-  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
-  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
-  init.angle = -50, border = NA
-)</code></pre>
-<div class="figure"><span id="fig:pie"></span>
-<img src="/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
-<p class="caption">
-Figure 1: A fancy pie chart.
-</p>
+<p>I have been meaning to set up a personal blog for probably over a year now and I’ve finally found the time to do so. I probably could have done this a few months ago if I hadn’t spent so much time agonizing over choosing between <a href="https://jekyllrb.com/">Jekyll</a> and <a href="https://gohugo.io/">Hugo</a>, as well as finding the ideal theme.</p>
+<p>Although some of that time was certainly spent on unnecessary nitpicking, I think it was worth it as I ultimately feel I made a comfortably informed choice. I will lay out my reasoning here, mostly as an exercise in documenting my actions but also on the off chance I ever need to share my thoughts on the matter with someone else.</p>
+<div id="how-i-found-jekyll-and-then-dropped-it-for-hugo" class="section level2">
+<h2>How I found Jekyll and then dropped it for Hugo</h2>
+<p>I have been using GitHub for a few years and at some point discovered they offered free hosting for static websites. I went to <a href="https://pages.github.com/">GitHub Pages</a> to find out more and diligently followed each step until I reached the bottom. If you do that, you’ll notice that one of the links entices you with the possibility of setting up a blog using Jekyll.</p>
+<p>As I didn’t know of any other alternatives, I went with that. The <a href="https://jekyllrb.com/docs/step-by-step/01-setup/">introductory tutorial</a> was quite easy to follow and I had a test site running in no time. Even with my, at the time, nonexistent webdev knowledge, I quickly understood how templates and content came together into a full website, by letting the user focus on content and giving them a limited set of options that the engine would then systematically transform into HTML. A very exciting revelation!</p>
+<p>Anyway, then came the very crucial issue of picking a theme. I probably spent more time on that than I did on the tutorial. I’m not entirely sure how, but at some point I arrived at <a href="https://forestry.io/">Forestry.io</a> and saw that there was another choice called Hugo. That rang some bells, as I remembered seeing it mentioned on Twitter, probably by some of the several R users I follow due to the <a href="https://bookdown.org/yihui/blogdown/">blogdown</a> package. And just like that, the seed of doubt was sown in me, so now I had to do additional research.</p>
+<p>Thankfully, <a href="https://forestry.io/blog/hugo-vs-jekyll-benchmark/">this article</a> was one of the first search results, and it made a fairly compelling case for Hugo over Jekyll.</p>
+<div class="figure">
+<img src="https://forestry.io/uploads/2018/01/Hugo-vs-jekyll-basic-test-10k-pages-1.png" />
+
 </div>
 </div>
 
@@ -283,8 +247,14 @@ Figure 1: A fancy pie chart.
 <div class="prev-next-post pure-g">
   <div class="pure-u-1-24" style="text-align: left;">
     
+    <a href="/post/2015-07-23-r-rmarkdown/"><i class="fa fa-chevron-left"></i></a>
+    
   </div>
   <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="/post/2015-07-23-r-rmarkdown/">Hello R Markdown</a>
+    </nav>
     
   </div>
   <div class="pure-u-2-24">
@@ -293,13 +263,13 @@ Figure 1: A fancy pie chart.
   <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="/post/testing/">Testing</a>
+      <a href="/post/2019-is-online/">2019 is online</a>
     </nav>
     
   </div>
   <div class="pure-u-1-24" style="text-align: right;">
     
-    <a href="/post/testing/"><i class="fa fa-chevron-right"></i></a>
+    <a href="/post/2019-is-online/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>

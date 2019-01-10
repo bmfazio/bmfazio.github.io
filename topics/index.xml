@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Topics on Boris Fazio</title>
-    <link>https://bmfazio.github.io/topics/</link>
+    <link>/topics/</link>
     <description>Recent content in Topics on Boris Fazio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; I have no clue what my rights are yet.</copyright>
     
-	<atom:link href="https://bmfazio.github.io/topics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/topics/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

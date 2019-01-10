@@ -7,21 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; I have no clue what my rights are yet.</copyright>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 10 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hello R Markdown</title>
-      <link>/about/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      <title>2019 is online</title>
+      <link>/post/2019-is-online/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/about/</guid>
-      <description>About me Hi! My name is Boris.
-I studied biology in college but statistics caught my attention along the way. Most of the time I’m helping other researchers analyze their data or reading about things that will help me help others more efficiently.
-In my free time I have started to create generative art. Hopefully I’ll have something nice to share here soon!
- About this site My main motivation for setting up a blog is to document my progress and sporadically publish personal musings.</description>
+      <guid>/post/2019-is-online/</guid>
+      <description>I have been meaning to set up a personal blog for probably over a year now and I’ve finally found the time to do so. I probably could have done this a few months ago if I hadn’t spent so much time agonizing over choosing between Jekyll and Hugo, as well as finding the ideal theme.
+Although some of that time was certainly spent on unnecessary nitpicking, I think it was worth it as I ultimately feel I made a comfortably informed choice.</description>
     </item>
     
     <item>
@@ -41,6 +39,18 @@ summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
       
       <guid>/contact/</guid>
       <description> First Name  Last Name  E-Mail  City  State AL CA IL      Send   </description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>About me Hi! My name is Boris.
+I studied biology in college but statistics caught my attention along the way. Most of the time I’m helping other researchers analyze their data or reading about things that will help me help others more efficiently.
+In my free time I have started to create generative art. Hopefully I’ll have something nice to share here soon!
+ About this site My main motivation for setting up a blog is to document my progress and sporadically publish personal musings.</description>
     </item>
     
   </channel>

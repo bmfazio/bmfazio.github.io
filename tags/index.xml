@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; I have no clue what my rights are yet.</copyright>
-    <lastBuildDate>Wed, 16 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 17 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://bmfazio.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Examples</title>
+      <link>https://bmfazio.github.io/tags/examples/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://bmfazio.github.io/tags/examples/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Harm</title>
@@ -36,6 +45,15 @@
       <pubDate>Wed, 16 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://bmfazio.github.io/tags/rct/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Viz</title>
+      <link>https://bmfazio.github.io/tags/viz/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://bmfazio.github.io/tags/viz/</guid>
       <description></description>
     </item>
     

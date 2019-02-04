@@ -18,8 +18,8 @@
       <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://bmfazio.github.io/post/a-quick-peep-into-named-distributions-and-20th-century-statistical-research/</guid>
-      <description>I was looking at the documentation for brms::brm and saw the term ‘distributional regression’ which, albeit I had already been using in practice, I’d never heard of before.
-This post is going to be about a niche lineage of papers I stumbled upon and my very opinionated take on it which, considering my current level of statistical knowledge, will in all probability be Quite Bad. First, an explanation for how I got there.</description>
+      <description>This post is going to be about a niche lineage of papers I stumbled upon and my very opinionated take on it which, considering my current level of statistical knowledge, will in all probability be Quite Bad. First, an explanation for how I got there.
+Some contextI’m currently doing my thesis on the endpoint-inflated binomial model. Building the actual model and fitting it under a Bayesian framework is pretty straightforward, but I’ve struggled a fair bit with finding practical use cases.</description>
     </item>
     
     <item>

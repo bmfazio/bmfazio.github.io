@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hugo on Boris Fazio</title>
+    <link>/tags/hugo/</link>
+    <description>Recent content in hugo on Boris Fazio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2019 is online</title>
+      <link>/blog/2019-is-online/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2019-is-online/</guid>
+      <description>I have been meaning to set up a personal blog for probably over a year now and I’ve finally found the time to do so. I probably could have done this a few months ago if I hadn’t spent so much time agonizing over choosing between Jekyll and Hugo, as well as finding the ideal theme.
+Although some of that time was certainly spent on unnecessary nitpicking, I think it was worth it as I ultimately feel I made a comfortably informed choice.</description>
+    </item>
+    
+  </channel>
+</rss>

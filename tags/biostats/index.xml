@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>biostats on Boris Fazio</title>
+    <link>/tags/biostats/</link>
+    <description>Recent content in biostats on Boris Fazio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/biostats/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blind obsession</title>
+      <link>/blog/blind-obsession/</link>
+      <pubDate>Wed, 16 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/blind-obsession/</guid>
+      <description>Today I came across an excellent thread by Andrew Althouse on whether it makes sense to blind the Data and Safety Monitoring Board (DSMB) in a RCT (it doesn’t). The main reason is provided in this tweet:
+“More evidence is required to stop a trial because of a benefit than because of harm. Trials are performed to assess safety and efficacy, not to “prove” harm…it is unreasonable to make the monitors behave as if they were indifferent to the direction of a treatment difference.</description>
+    </item>
+    
+  </channel>
+</rss>

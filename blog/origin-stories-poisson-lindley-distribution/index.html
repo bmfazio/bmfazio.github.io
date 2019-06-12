@@ -7,6 +7,18 @@
     <title>Origin stories: Poisson-Lindley distribution | Boris Fazio</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
+	
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-141885901-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
     
   </head>
 
@@ -36,32 +48,14 @@
 <script src="/rmarkdown-libs/kePrint/kePrint.js"></script>
 
 
-<p>This post is going to be about a niche lineage of papers I stumbled upon and my very opinionated take on it which, considering my current level of statistical knowledge, will in all probability be Quite Bad. First, an explanation for how I got there.</p>
+<p>You may find this post interesting if you’ve ever been reading a paper and noticed the author nonchalantly introducing some concept that just makes you go “where did THAT come from?” and felt the urge to recursively navigate references until you got an explanation for how such a thing came to be.</p>
 <div id="some-context" class="section level2">
 <h2>Some context</h2>
-<p>I’m currently doing my thesis on the endpoint-inflated binomial model. Building the actual model and fitting it under a Bayesian framework is pretty straightforward, but I’ve struggled a fair bit with finding practical use cases.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
-<p>An interesting property of probability distributions is that distinct processes may result in the same formulas.<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a> In the particular case of the endpoint-inflated binomial, Tian<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> lays out six processes<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a> under which the distribution can arise.</p>
+<p>During the lit review for my master’s thesis, I was looking for some prior work on truncated distributions and found a paper by <span class="citation">Ghitany, Al-Mutairi, and Nadarajah (<a href="#ref-ghitany2008zero">2008</a>)</span>. This is the abstract:</p>
 <blockquote>
-<p>A discrete random variable that takes integer values between <em>0</em> and some known maximum <em>m</em> will have an endpoint-inflated binomial distribution if it can be modeled as one of the following:</p>
-<ol style="list-style-type: decimal">
-<li><p>Mixture of <em>degenerate(0)</em>, <em>degenerate(m)</em> and <em>binomial</em></p></li>
-<li><p>Mixture of <em>m*Bernoulli</em> and <em>binomial</em></p></li>
-<li><p>Mixture of <em>degenerate(m)</em> and <em>zero-inflated binomial</em></p></li>
-<li><p>Mixture of <em>degenerate(0)</em>, <em>degenerate(m)</em> and <em>zero-truncated binomial</em></p></li>
-<li><p>Mixture of <em>degenerate(0)</em>, <em>degenerate(m)</em> and <em>maximum-truncated binomial</em><a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a></p></li>
-<li><p>Mixture of <em>degenerate(0)</em>, <em>degenerate(m)</em> and <em>endpoint-truncated binomial</em></p></li>
-</ol>
+<p>The zero-truncated Poisson–Lindley [ZPTL] distribution is introduced and investigated. In particular, the method of moments and maximum likelihood estimators of the distribution’s parameter are compared in small and large samples. <strong>Application of the model to real data is given.</strong></p>
 </blockquote>
-<p>Situations where the first process applies are relatively simple to picture. For example, the number of insects killed by some treatment, where <em>0</em> and <em>m</em> correspond to extremes on a susceptibility spectrum and the binomial distribution corresponds to a partially susceptible population. The rest of them… I’ve wracked my brain trying to come up with examples that didn’t seem unrealistically convoluted and got nowhere.</p>
-<p>Then I remembered that we’re allowed to ask the internet for questions.</p>
-</div>
-<div id="into-the-rabbit-hole" class="section level2">
-<h2>Into the rabbit hole</h2>
-<p>I searched for <em>zero truncated distribution</em><a href="#fn6" class="footnote-ref" id="fnref6"><sup>6</sup></a> and a paper by Ghitany <em>et al.</em><a href="#fn7" class="footnote-ref" id="fnref7"><sup>7</sup></a> showed up with a promising abstract:</p>
-<blockquote>
-<p>The zero-truncated Poisson–Lindley distribution is introduced and investigated. In particular, the method of moments and maximum likelihood estimators of the distribution’s parameter are compared in small and large samples. <strong>Application of the model to real data is given.</strong></p>
-</blockquote>
-<p>Emphasis mine. Omitting some references to tables and hypothesis test calculations, the application section is very brief:</p>
+<p>Emphasis mine. If you omit the text talking about the tables and the calculations for the hypothesis test, the application section is surprisingly brief:</p>
 <blockquote>
 <p>Cullen et al. gave counts of sites with 1, 2, 3, 4 and 5 particles from immunogold assay data. The counts were 122, 50, 18, 4, 4.</p>
 <p>[…]</p>
@@ -69,18 +63,18 @@
 <p>[…]</p>
 <p>It follows that the null hypothesis H0 cannot be rejected; indeed, the close agreement between the observed and expected frequencies suggests that the ZTPL distribution provides a “good fit”.</p>
 </blockquote>
-<p>I didn’t like this section for a few reasons:</p>
+<p>I did not feel the authors were making a good case for the applicability of their model to real data in that section. A few reasons why:</p>
 <ol style="list-style-type: decimal">
-<li><p>No attempt was made at establishing a connection between the data generating process and the distribution under examination.</p></li>
-<li><p>Using the NHST paradigm with such a small dataset basically guarantees the null won’t be rejected, which happens to be a desirable result for an author wishing to show “good fit”.</p></li>
-<li><p>The model wasn’t compared against any alternative, so we don’t even know if this model is any better than whatever came before it.</p></li>
+<li><p>No attempt was made at establishing a connection between the data generating process and the proposed distribution.</p></li>
+<li><p>Using NHST on such a small dataset basically guarantees the null won’t be rejected and using a null result to assert a conclusion is plain wrong.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p></li>
+<li><p>The model wasn’t compared against an alternative, so we don’t even know if ther model represents any improvement over previous practice.</p></li>
 </ol>
-<p>These observations provided a starting point for some interesting reflections, but I’ll save that for the end. First, I had to investigate further into the origins and presumed usefulness of the distribution posited in the paper.</p>
+<p>Still, I was intrigued by the so-called ZTPL distribution. Whenever there’s a distribution named after someone, one can expect to find the original publication where it was first introduced, where a budding statistician (such as myself) might be lucky to find an example of subject matter knowledge and statistical thought coming together to create bespoke modeling solutions.</p>
+<p>I thought that perhaps the Ghitany paper had glossed over the application section because it was assumed that people who might care about the topic would already be familiar the distribution’s relevance. Since I was already familiar with the Poisson distribution and zero truncation is a fairly straightforward modification, I decided to look into the “Lindley” part of the distribution next.</p>
 </div>
 <div id="following-the-trail" class="section level2">
 <h2>Following the trail</h2>
-<p>I’d previously come across another named distribution<a href="#fn8" class="footnote-ref" id="fnref8"><sup>8</sup></a>, <a href="https://en.wikipedia.org/wiki/Birnbaum%E2%80%93Saunders_distribution">the Birnbaum-Saunders</a>, which was created with a specific application in mind. I thought that perhaps Ghitany’s paper had glossed over the applications because it was assumed that people who would care about that paper would already understand the distribution’s relevance, so I decided to delve deeper and understand what this Lindley distribution being referenced was about.</p>
-<p>It turns out there was a previous paper from that same year by Ghitany<a href="#fn9" class="footnote-ref" id="fnref9"><sup>9</sup></a> which was solely about the Lindley distribution and also featured a positively succinct abstract:</p>
+<p>It turned out there was a previous paper from that same year by <span class="citation">Ghitany, Atieh, and Nadarajah (<a href="#ref-ghitany2008lindley">2008</a>)</span> which focused solely on the Lindley distribution. The abstract:</p>
 <blockquote>
 <p>A treatment of the mathematical properties is provided for the Lindley distribution. The properties studied include: moments, cumulants, characteristic function, failure rate function, mean residual life function, mean deviations, Lorenz curve, stochastic ordering, entropies, asymptotic distribution of the extreme order statistics, distributions of sums, products and ratios, maximum likelihood estimation and simulation schemes. <strong>An application to waiting time data at a bank is described.</strong></p>
 </blockquote>
@@ -91,15 +85,15 @@
 </blockquote>
 <p>Things to note here:</p>
 <ol style="list-style-type: decimal">
-<li><p>As opposed to the other paper, we do have a comparison between the author’s distribution of interest and a more established one.</p></li>
-<li><p>There’s no reference given for the data. If you go to the table they reference, it’s literally just a 10x10 array of numbers, which the caption says represent waiting times of bank customers.</p></li>
-<li><p>Again, no attempt is made to justify the connection between the distribution of interest and the data being modeled, although there seems to be an implication that because it has a similar shape to the exponential<a href="#fn10" class="footnote-ref" id="fnref10"><sup>10</sup></a>, it could also be suitable for the task.</p></li>
+<li><p>As opposed to the other paper, we have a comparison between the author’s proposed distribution and a more established one.</p></li>
+<li><p>If you go to the table they mention in the text, it’s just a 10x10 array of numbers, which the caption says represent waiting times of bank customers, but there’s no further reference given for the origin of the data.</p></li>
+<li><p>Again, no attempt is made to justify the connection between the distribution of interest and the data being modeled, although there seems to be an implication that because it has a similar shape to the exponential<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>, it may also be suitable for the task.</p></li>
 </ol>
-<p>Again I found this unsatisfactory, so down one level I went, this time to much older work from Sankaran<a href="#fn11" class="footnote-ref" id="fnref11"><sup>11</sup></a>:</p>
+<p>I was still not satisfied with the way the distribution was being used as a given without further explanation. While there were direct references to articles by Lindley himself in the paper above, the titles didn’t really seem to focus on distributions, so I looked at the work by <span class="citation">Sankaran (<a href="#ref-sankaran1970275">1970</a>)</span> next:</p>
 <blockquote>
 <p>A compound Poisson distribution is obtained by compounding the Poisson distribution with one due to Lindley. Estimation of the parameter is discussed, examples are given of the fitting of this distribution to data, and the fit is compared with that obtained using other distributions.</p>
 </blockquote>
-<p>The article essentially consists of one page where the distribution and related formulas are presented, followed by two applications presented in tables which I transcribe here with the corresponding text:</p>
+<p>The article is pretty brief. The distribution and related formulas are presented in about one page, followed by two applications presented in tables which I transcribe here with the corresponding text:</p>
 <blockquote>
 <p>We consider two examples of observed data for which the two-parameter Hermite and negative binomial distributions, respectively, have been fitted. Tables 1 and 2 give the comparison of observed and expected frequencies for these, the Poisson, and the Poisson-Lindley distributions. Maximum likelihood was used to fit the Hermite distribution, but moment estimates were used in fitting the negative binomial and the present distribution.</p>
 <p>The present single-parameter distribution appears to give a satisfactory fit in both cases, whereas the Poisson distribution does not. For the two sets of data, <span class="math inline">\(\{d \log L/d\theta\}_{\theta*}\)</span> has the values 0.05 and 0.07 respectively, the second derivative being negative when <span class="math inline">\(\theta = \theta*\)</span>, indicating that the moment estimate <span class="math inline">\(\theta*\)</span> is close to the maximum likelihood estimate in both cases.</p>
@@ -123,8 +117,7 @@ Expected frequencies
 No. of errors per group
 </th>
 <th style="text-align:right;">
-Observed
-frequencies
+Observed frequencies
 </th>
 <th style="text-align:right;">
 Poisson
@@ -139,10 +132,10 @@ Poisson-Lindley
 </thead>
 <tbody>
 <tr>
-<td style="text-align:right;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 0
 </td>
-<td style="text-align:right;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 35
 </td>
 <td style="text-align:right;">
@@ -156,10 +149,10 @@ Poisson-Lindley
 </td>
 </tr>
 <tr>
-<td style="text-align:right;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 1
 </td>
-<td style="text-align:right;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 11
 </td>
 <td style="text-align:right;">
@@ -173,10 +166,10 @@ Poisson-Lindley
 </td>
 </tr>
 <tr>
-<td style="text-align:right;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
-<td style="text-align:right;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 8
 </td>
 <td style="text-align:right;">
@@ -190,10 +183,10 @@ Poisson-Lindley
 </td>
 </tr>
 <tr>
-<td style="text-align:right;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 3
 </td>
-<td style="text-align:right;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 4
 </td>
 <td style="text-align:right;">
@@ -207,10 +200,10 @@ Poisson-Lindley
 </td>
 </tr>
 <tr>
-<td style="text-align:right;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 4
 </td>
-<td style="text-align:right;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 <td style="text-align:right;">
@@ -225,6 +218,7 @@ Poisson-Lindley
 </tr>
 </tbody>
 </table>
+<br>
 <table class="table" style="margin-left: auto; margin-right: auto;">
 <caption>
 <span id="tab:unnamed-chunk-3">Table 2: </span>Accidents to 647 women working on high explosive shells in 5 weeks. Data from Greenwood and Yule (1920) reported by Kendall and Stuart (1963, p. 129).
@@ -240,7 +234,7 @@ Expected frequencies
 </th>
 </tr>
 <tr>
-<th style="text-align:left;">
+<th style="text-align:right;">
 No. of errors per group
 </th>
 <th style="text-align:right;">
@@ -259,10 +253,10 @@ Poisson-Lindley
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 0
 </td>
-<td style="text-align:right;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 447
 </td>
 <td style="text-align:right;">
@@ -276,10 +270,10 @@ Poisson-Lindley
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 1
 </td>
-<td style="text-align:right;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 132
 </td>
 <td style="text-align:right;">
@@ -293,10 +287,10 @@ Poisson-Lindley
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
-<td style="text-align:right;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 42
 </td>
 <td style="text-align:right;">
@@ -310,10 +304,10 @@ Poisson-Lindley
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 3
 </td>
-<td style="text-align:right;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 21
 </td>
 <td style="text-align:right;">
@@ -327,10 +321,10 @@ Poisson-Lindley
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 4
 </td>
-<td style="text-align:right;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 3
 </td>
 <td style="text-align:right;">
@@ -344,10 +338,10 @@ Poisson-Lindley
 </td>
 </tr>
 <tr>
-<td style="text-align:left;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 &gt;=5
 </td>
-<td style="text-align:right;width: 6em; ">
+<td style="text-align:right;width: 10em; ">
 2
 </td>
 <td style="text-align:right;">
@@ -362,12 +356,8 @@ Poisson-Lindley
 </tr>
 </tbody>
 </table>
-<p>Once again it seems that the appropriateness of the distribution to the data at hand is assumed obvious. It’s also interesting to note that, while the Poisson fit performs the worst in both cases, the proposed distribution isn’t the best in any, either (at least if we go by the distance between expected and observed counts).</p>
-<p>At this point, the only thing left to do was check out the paper by Lindley<a href="#fn12" class="footnote-ref" id="fnref12"><sup>12</sup></a> himself.</p>
-</div>
-<div id="so-thats-where-you-came-from" class="section level2">
-<h2>So that’s where you came from</h2>
-<p>In keeping with the pattern of the post, here’s the paper’s abstract:</p>
+<p>Once again it, there is no in-depth explanation of why it would occur to someone to apply that distribution to the problems shown. It’s also interesting to note that, while the Poisson fit performs the worst in both cases, the Hermite distribution is the one that seems to offer a generally better fit instead of the proposed Poisson-Lindley .</p>
+<p>At this point, I only had Lindley’s work to fall back to. One of the references was a book volume, so I looked at the shorter <span class="citation">Lindley (<a href="#ref-lindley1958fiducial">1958</a>)</span> paper first:</p>
 <blockquote>
 <p><span class="math inline">\(x\)</span> is a one-dimensional random variable whose distribution depedns on a single parameter <span class="math inline">\(\theta\)</span>. It is the purpose of this note to establish two results:</p>
 <ol style="list-style-type: lower-roman">
@@ -376,48 +366,40 @@ Poisson-Lindley
 </ol>
 <p>The note concludes with an investigation of (A) in th case of the exponential family.</p>
 </blockquote>
-<p>I have a very superficial understanding of fiducial inference and the term “Bayes’ distribution” tripped me up at first, but I believe Lindley’s intention here was to show in a fairly general setting that the fiducial framework offered nothing above and beyond a Bayesian one.</p>
+<p>I have a very superficial understanding of fiducial inference and the term “Bayes’ distribution” tripped me up at first, but I believe Lindley’s intention here was to show in a fairly general setting that the fiducial framework could be fully subsumed within a Bayesian one.</p>
 <p>In this specific context, <em>consistency</em> of the fiducial argument means that it should result in the same inference as that obtained through Bayesian means when the same information is provided to both methods. Lindley tells us that for that to be the case, a posterior distribution that takes prior information encoded in a sufficient statistic <span class="math inline">\(x\)</span> and updates it with data that has a sufficient statistic <span class="math inline">\(y\)</span> should be equal to the fiducial distribution produced given <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> as data.</p>
-<p>I did not read through the specifics, but what is purportedly shown in the end is that fiducial consistency is only obtained when a Bayesian would set up their priors in a certain specific way. Therefore, the implication here is that you could just be Bayesian and reach the same conclusions, with the added flexibility of being able to specify different priors if needed.</p>
-<p>Along the way, Lindley gives an example of a distribution that leads to an inconsistency with the fiducial approach. Funny thing is that the distribution simply conjured on the spot, with a form explicitly chosen for simplicity.</p>
+<p>I did not read through the specifics, but what is purportedly shown in the end is that fiducial consistency is only obtained when a Bayesian would set up their priors in a certain specific way. Therefore, the implication here is that you could just be Bayesian and reach the same conclusions, with the added flexibility of being able to work with different priors if needed.</p>
+<p>In the process of showing the point above, Lindley gives an example of a distribution that leads to an inconsistency with the fiducial approach. Funny thing is that the distribution simply conjured on the spot, with a form explicitly chosen for simplicity.</p>
 <p>What?!</p>
 </div>
-<div id="epilogue" class="section level2">
-<h2>Epilogue</h2>
-<p>I’ll be honest, I find it quite amusing that some arbitrary distribution Lindley came up with on the spot ended up spawning a lineage of publications spanning over half a century<a href="#fn13" class="footnote-ref" id="fnref13"><sup>13</sup></a>. What I don’t find quite as amusing is what I perceive as an unwarranted attempt at pushing a “real world” utility of that distribution.</p>
-<p>I’ve had the opportunity of meeting pure mathematicians. The perhaps all too stereotyped but quite real kind of person that devotes much of their life to understanding the properties of logical constructs with no clear connection to our real world for the sheer pleasure of it, much like professional puzzle solvers. I respect what they do, and I’ve heard of cases where long-solved math problems ended up providing answers to modern problems in applied areas, but even without any guarantee of the sorts, it is important that we give a place to such pursuers of intellectual freedom in our society. I will defer to the great Richard McElreath for <a href="http://elevanth.org/blog/2018/09/02/golden_eggs/">further and better presented justification</a>.</p>
-<p>In this particular case, however, I feel that what could very well have been a pleasant exploration of the statistical properties of an arbitrary distribution is marred by those repeated and poorly laid out attempts at pushing some ill-defined sense of “real world utility”. I think it unecessary and dishonest, though perhaps it’s a good moment to bring up the Gelman twist on Clarke’s Law:</p>
-<blockquote>
-<p><a href="https://statmodeling.stat.columbia.edu/2016/06/20/clarkes-law-of-research/">Any sufficiently crappy research is indistinguishable from fraud</a></p>
-</blockquote>
-<p>To be clear, only the recurrent application sections in that lineage of papers is what might deserve the “crappy” label. The rest of each of those articles seems to follow a reasonable if formulaic format for showing aspects of interest to mathematical statisticians, though it all mostly goes over my head.</p>
-<p>Precisely because of the effort that seemingly went into the rest of the work, it is quite likely that such a throwaway treatment of applications was the product of a particular academic praxis rather than straight up deceitful attempts at overinflating the significance of their work<a href="#fn14" class="footnote-ref" id="fnref14"><sup>14</sup></a>.</p>
+<div id="so-thats-that" class="section level2">
+<h2>So that’s that</h2>
+<p>I’ll be honest, I’m somewhat amused that some arbitrary distribution Lindley came up with on the spot ended up spawning a lineage of publications spanning over half a century (there are more recent publications on it which I didn’t include here). What I don’t find quite as amusing is what I perceive as an unwarranted attempt at pushing a “real world” utility of that distribution.</p>
+<p>I don’t want to get too preachy here, but it would seem like all of these authors (except for Lindley) saw an opportunity to increase their publication record by following some tacit, minimum-effort format in their academic niche. They definitely appear to have command of the necessary concepts and math tools to expound on the statistical properties of a distribution, but the throwaway nature of their application sections makes me feel like they weren’t really interested in seeing if their work had any utility but were simply forced to go through the motions to appear like they were.</p>
+<p>Of course, I could be reading too much into things. I’m probably projecting some of my own experiences as a student who trusted too much in senior researchers who told me to do work on certain things whose pupose I never quite understood and that it would now seem were simply intended to push more publications citing their work. Trying to unpack this would need a post of itself, or more likely an entire book, so I’ll leave it at that for the time being.</p>
 </div>
-<div id="final-remarks" class="section level2">
-<h2>Final remarks</h2>
-<p>As of this post I still haven’t found other applications where Tian’s stochastic representations seem naturally applicable.</p>
-<p>I’m left with the impression that there isn’t anything particularly interesting about Lindley’s distribution other than its passing resemblance to the exponential. One of the authors cited tried to make a point of it being “more flexible” than the exponental because its moments behave differently, but that’s just a different form of inflexibility as far as I can tell. Maybe Lindley’s distribution is actually a super popular thing in some niche field, but I’m calling off that search for now.</p>
-<p>Overall, I feel that this has been a productive exploration. The differences between the concerns exhibited in those papers and the ones I’ve become used to reading (and caring about) has allowed me to better appreciate intra-field variation at a time where some seem to regard the whole of statistics as this one single thing you must be good at for certain jobs.</p>
-<p>Also, the whole process of finding, reading the papers and writing this post took me almost three days. To be fair, I also spent some of that time figuring out formatting as I’m still new to <code>blogdown</code>. Just in case anyone wants to know<a href="#fn15" class="footnote-ref" id="fnref15"><sup>15</sup></a>.</p>
+<div id="references" class="section level2 unnumbered">
+<h2>References</h2>
+<div id="refs" class="references">
+<div id="ref-ghitany2008zero">
+<p>Ghitany, ME, Dhaifalla K Al-Mutairi, and S Nadarajah. 2008. “Zero-Truncated Poisson–Lindley Distribution and Its Application.” <em>Mathematics and Computers in Simulation</em> 79 (3): 279–87.</p>
+</div>
+<div id="ref-ghitany2008lindley">
+<p>Ghitany, ME, B Atieh, and S Nadarajah. 2008. “Lindley Distribution and Its Application.” <em>Mathematics and Computers in Simulation</em> 78 (4): 493–506.</p>
+</div>
+<div id="ref-lindley1958fiducial">
+<p>Lindley, Dennis V. 1958. “Fiducial Distributions and Bayes’ Theorem.” <em>Journal of the Royal Statistical Society. Series B (Methodological)</em>, 102–7.</p>
+</div>
+<div id="ref-sankaran1970275">
+<p>Sankaran, Munuswamy. 1970. “275. Note: The Discrete Poisson-Lindley Distribution.” <em>Biometrics</em>, 145–49.</p>
+</div>
+</div>
 </div>
 <div class="footnotes">
 <hr />
 <ol>
-<li id="fn1"><p>Explaining the circumstances under which a statistical model can be considered useful deserves a post of its own, Galit Shmueli’s <a href="https://projecteuclid.org/euclid.ss/1294167961"><em>To Explain or to Predict?</em></a> is not a bad place to start<a href="#fnref1" class="footnote-back">↩</a></p></li>
-<li id="fn2"><p>There’s definitely a larger point that can be made here about how different sequences of steps can take you to the same place, but I’m not sure if it’s actually insightful and I can’t even articulate it anyway<a href="#fnref2" class="footnote-back">↩</a></p></li>
-<li id="fn3"><p><a href="http://doi.org/10.1016/j.csda.2015.03.009"><em>Generalized endpoint-inflated binomial model</em>, 2015</a><a href="#fnref3" class="footnote-back">↩</a></p></li>
-<li id="fn4"><p>They call them “stochastical representations”, a term which I enjoy as it feels concise and intuitive<a href="#fnref4" class="footnote-back">↩</a></p></li>
-<li id="fn5"><p>This one seems a bit redundant since you can achieve the same result by flipping the outcome coding for the previous one<a href="#fnref5" class="footnote-back">↩</a></p></li>
-<li id="fn6"><p>In that moment of intellectual stupor experienced when trying to grapple with a new set of concepts, the truncated distributions seemed like the more complicated aspect in the set of stochastic representations offered. But they’re actually quite direct in their meaning: they occur when the data generating mechanism prevents us from observing the truncated values. An example is length of stay for hotel guests, who must stay for at least one day by definition. This whole post might not have happened if I’d thought of such a scenario earlier.<a href="#fnref6" class="footnote-back">↩</a></p></li>
-<li id="fn7"><p><a href="https://doi.org/10.1016/j.matcom.2007.11.021"><em>Zero-truncated Poisson–Lindley distribution and its application</em>, 2008</a><a href="#fnref7" class="footnote-back">↩</a></p></li>
-<li id="fn8"><p>By this I mean a distribution named after someone. While not a relevant category in any statistical sense, I have a hunch that these are more likely to have been created with a specialized purpose in mind and, by virtue of being traceable back to a single individual’s work, can provide real examples for budding statisticians who wish to understand how subject knowledge and random variation come together and give rise to new models (as opposed to the all-too-common practice of seeing which model from some preexisting collection gives the best fit, see <a href="https://www.johndcook.com/blog/2010/08/11/what-distribution-does-my-data-have/">this excellent article</a> from John D. Cook on the matter).<a href="#fnref8" class="footnote-back">↩</a></p></li>
-<li id="fn9"><p><a href="https://doi.org/10.1016/j.matcom.2007.06.007"><em>Lindley distribution and its application</em>, 2008</a><a href="#fnref9" class="footnote-back">↩</a></p></li>
-<li id="fn10"><p>Which does have a history of being used to model waiting times, with reasonable motivation for the choice, see <a href="https://math.stackexchange.com/questions/146293/why-do-we-always-assume-waiting-time-has-exponential-distribution">this question on StackExchange</a><a href="#fnref10" class="footnote-back">↩</a></p></li>
-<li id="fn11"><p><a href="https://dx.doi.org/10.2307/2529053"><em>275. Note: The Discrete Poisson-Lindley Distribution</em>, 1970</a><a href="#fnref11" class="footnote-back">↩</a></p></li>
-<li id="fn12"><p><a href="https://www.jstor.org/stable/2983909"><em>Fiducial Distributions and Bayes’ Theorem</em>, 1958</a><a href="#fnref12" class="footnote-back">↩</a></p></li>
-<li id="fn13"><p>There are more recent publications referencing the distribution which I didn’t include here.<a href="#fnref13" class="footnote-back">↩</a></p></li>
-<li id="fn14"><p>I got the same vibes from professors at my school, but that’s a topic for another post<a href="#fnref14" class="footnote-back">↩</a></p></li>
-<li id="fn15"><p>I probably will in the future when I again feel inefficient and come looking for some benchmark against past me<a href="#fnref15" class="footnote-back">↩</a></p></li>
+<li id="fn1"><p>I have to write a post on this surprisingly common misconception regarding NHST<a href="#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p>Which does have a history of being used to model waiting times, with reasonable motivation for the choice, see <a href="https://math.stackexchange.com/questions/146293/why-do-we-always-assume-waiting-time-has-exponential-distribution">this question on StackExchange</a><a href="#fnref2" class="footnote-back">↩</a></p></li>
 </ol>
 </div>
 

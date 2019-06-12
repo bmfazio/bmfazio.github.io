@@ -17,8 +17,8 @@
       <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/blog/origin-stories-poisson-lindley-distribution/</guid>
-      <description>This post is going to be about a niche lineage of papers I stumbled upon and my very opinionated take on it which, considering my current level of statistical knowledge, will in all probability be Quite Bad. First, an explanation for how I got there.
-Some contextI’m currently doing my thesis on the endpoint-inflated binomial model. Building the actual model and fitting it under a Bayesian framework is pretty straightforward, but I’ve struggled a fair bit with finding practical use cases.</description>
+      <description>You may find this post interesting if you’ve ever been reading a paper and noticed the author nonchalantly introducing some concept that just makes you go “where did THAT come from?” and felt the urge to recursively navigate references until you got an explanation for how such a thing came to be.
+Some contextDuring the lit review for my master’s thesis, I was looking for some prior work on truncated distributions and found a paper by Ghitany, Al-Mutairi, and Nadarajah (2008).</description>
     </item>
     
     <item>

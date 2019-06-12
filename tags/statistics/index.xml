@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>statistics on Boris Fazio</title>
-    <link>/tags/statistics/</link>
+    <link>https://bmfazio.github.io/tags/statistics/</link>
     <description>Recent content in statistics on Boris Fazio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bmfazio.github.io/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Origin stories: Poisson-Lindley distribution</title>
-      <link>/blog/origin-stories-poisson-lindley-distribution/</link>
+      <link>https://bmfazio.github.io/blog/origin-stories-poisson-lindley-distribution/</link>
       <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/origin-stories-poisson-lindley-distribution/</guid>
+      <guid>https://bmfazio.github.io/blog/origin-stories-poisson-lindley-distribution/</guid>
       <description>You may find this post interesting if you’ve ever been reading a paper and noticed the author nonchalantly introducing some concept that just makes you go “where did THAT come from?” and felt the urge to recursively navigate references until you got an explanation for how such a thing came to be.
 Some contextDuring the lit review for my master’s thesis, I was looking for some prior work on truncated distributions and found a paper by Ghitany, Al-Mutairi, and Nadarajah (2008).</description>
     </item>

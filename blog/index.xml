@@ -2,51 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog posts on Boris Fazio</title>
-    <link>/blog/</link>
+    <link>https://bmfazio.github.io/blog/</link>
     <description>Recent content in Blog posts on Boris Fazio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bmfazio.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Origin stories: Poisson-Lindley distribution</title>
-      <link>/blog/origin-stories-poisson-lindley-distribution/</link>
+      <link>https://bmfazio.github.io/blog/origin-stories-poisson-lindley-distribution/</link>
       <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/origin-stories-poisson-lindley-distribution/</guid>
+      <guid>https://bmfazio.github.io/blog/origin-stories-poisson-lindley-distribution/</guid>
       <description>You may find this post interesting if you’ve ever been reading a paper and noticed the author nonchalantly introducing some concept that just makes you go “where did THAT come from?” and felt the urge to recursively navigate references until you got an explanation for how such a thing came to be.
 Some contextDuring the lit review for my master’s thesis, I was looking for some prior work on truncated distributions and found a paper by Ghitany, Al-Mutairi, and Nadarajah (2008).</description>
     </item>
     
     <item>
       <title>Great use case for flexdashboard</title>
-      <link>/blog/great-use-case-for-flexdashboard/</link>
+      <link>https://bmfazio.github.io/blog/great-use-case-for-flexdashboard/</link>
       <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/great-use-case-for-flexdashboard/</guid>
+      <guid>https://bmfazio.github.io/blog/great-use-case-for-flexdashboard/</guid>
       <description>Found this blog post by Jennifer Thompson today, thanks to the flurry of great content being shared on Twitter during #rstudioconf. It’s about making dashboards with the flexdashboard R package, with an application to monitoring clinical research.
 I’m definitely going to be using this at some point.</description>
     </item>
     
     <item>
       <title>Blind obsession</title>
-      <link>/blog/blind-obsession/</link>
+      <link>https://bmfazio.github.io/blog/blind-obsession/</link>
       <pubDate>Wed, 16 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/blind-obsession/</guid>
+      <guid>https://bmfazio.github.io/blog/blind-obsession/</guid>
       <description>Today I came across an excellent thread by Andrew Althouse on whether it makes sense to blind the Data and Safety Monitoring Board (DSMB) in a RCT (it doesn’t). The main reason is provided in this tweet:
 “More evidence is required to stop a trial because of a benefit than because of harm. Trials are performed to assess safety and efficacy, not to “prove” harm…it is unreasonable to make the monitors behave as if they were indifferent to the direction of a treatment difference.</description>
     </item>
     
     <item>
       <title>2019 is online</title>
-      <link>/blog/2019-is-online/</link>
+      <link>https://bmfazio.github.io/blog/2019-is-online/</link>
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/2019-is-online/</guid>
+      <guid>https://bmfazio.github.io/blog/2019-is-online/</guid>
       <description>I have been meaning to set up a personal blog for probably over a year now and I’ve finally found the time to do so. I probably could have done this a few months ago if I hadn’t spent so much time agonizing over choosing between Jekyll and Hugo, as well as finding the ideal theme.
 Although some of that time was certainly spent on unnecessary nitpicking, I think it was worth it as I ultimately feel I made a comfortably informed choice.</description>
     </item>

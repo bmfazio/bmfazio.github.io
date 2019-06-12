@@ -2,57 +2,57 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Boris Fazio</title>
-    <link>/tags/</link>
+    <link>https://bmfazio.github.io/tags/</link>
     <description>Recent content in Tags on Boris Fazio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bmfazio.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>origin story</title>
-      <link>/tags/origin-story/</link>
+      <link>https://bmfazio.github.io/tags/origin-story/</link>
       <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/origin-story/</guid>
+      <guid>https://bmfazio.github.io/tags/origin-story/</guid>
       <description></description>
     </item>
     
     <item>
       <title>statistics</title>
-      <link>/tags/statistics/</link>
+      <link>https://bmfazio.github.io/tags/statistics/</link>
       <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/statistics/</guid>
+      <guid>https://bmfazio.github.io/tags/statistics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>viz</title>
-      <link>/tags/viz/</link>
+      <link>https://bmfazio.github.io/tags/viz/</link>
       <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/viz/</guid>
+      <guid>https://bmfazio.github.io/tags/viz/</guid>
       <description></description>
     </item>
     
     <item>
       <title>biostats</title>
-      <link>/tags/biostats/</link>
+      <link>https://bmfazio.github.io/tags/biostats/</link>
       <pubDate>Wed, 16 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/biostats/</guid>
+      <guid>https://bmfazio.github.io/tags/biostats/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hugo</title>
-      <link>/tags/hugo/</link>
+      <link>https://bmfazio.github.io/tags/hugo/</link>
       <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/hugo/</guid>
+      <guid>https://bmfazio.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     

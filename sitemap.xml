@@ -3,82 +3,82 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/blog/</loc>
+    <loc>https://bmfazio.github.io/blog/</loc>
     <lastmod>2019-02-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/blog/origin-stories-poisson-lindley-distribution/</loc>
+    <loc>https://bmfazio.github.io/blog/origin-stories-poisson-lindley-distribution/</loc>
     <lastmod>2019-02-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-02-03T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2019-02-03T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/origin-story/</loc>
+    <loc>https://bmfazio.github.io/tags/</loc>
     <lastmod>2019-02-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/statistics/</loc>
+    <loc>https://bmfazio.github.io/</loc>
+    <lastmod>2019-02-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://bmfazio.github.io/tags/origin-story/</loc>
     <lastmod>2019-02-03T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/blog/great-use-case-for-flexdashboard/</loc>
+    <loc>https://bmfazio.github.io/tags/statistics/</loc>
+    <lastmod>2019-02-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://bmfazio.github.io/blog/great-use-case-for-flexdashboard/</loc>
     <lastmod>2019-01-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/viz/</loc>
+    <loc>https://bmfazio.github.io/tags/viz/</loc>
     <lastmod>2019-01-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/blog/blind-obsession/</loc>
+    <loc>https://bmfazio.github.io/blog/blind-obsession/</loc>
     <lastmod>2019-01-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/biostats/</loc>
+    <loc>https://bmfazio.github.io/tags/biostats/</loc>
     <lastmod>2019-01-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/blog/2019-is-online/</loc>
+    <loc>https://bmfazio.github.io/blog/2019-is-online/</loc>
     <lastmod>2019-01-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/hugo/</loc>
+    <loc>https://bmfazio.github.io/tags/hugo/</loc>
     <lastmod>2019-01-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/categories/</loc>
+    <loc>https://bmfazio.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/projects/</loc>
+    <loc>https://bmfazio.github.io/projects/</loc>
   </url>
   
   <url>
-    <loc>/resources/</loc>
+    <loc>https://bmfazio.github.io/resources/</loc>
   </url>
   
 </urlset>

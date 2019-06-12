@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>viz on Boris Fazio</title>
-    <link>/tags/viz/</link>
+    <link>https://bmfazio.github.io/tags/viz/</link>
     <description>Recent content in viz on Boris Fazio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/viz/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://bmfazio.github.io/tags/viz/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Great use case for flexdashboard</title>
-      <link>/blog/great-use-case-for-flexdashboard/</link>
+      <link>https://bmfazio.github.io/blog/great-use-case-for-flexdashboard/</link>
       <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/blog/great-use-case-for-flexdashboard/</guid>
+      <guid>https://bmfazio.github.io/blog/great-use-case-for-flexdashboard/</guid>
       <description>Found this blog post by Jennifer Thompson today, thanks to the flurry of great content being shared on Twitter during #rstudioconf. It’s about making dashboards with the flexdashboard R package, with an application to monitoring clinical research.
 I’m definitely going to be using this at some point.</description>
     </item>
